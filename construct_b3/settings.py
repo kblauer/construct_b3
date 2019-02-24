@@ -73,14 +73,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'construct_b3.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dbconstruct',
+        'USER': 'constructDbUser',
+        'PASSWORD': ':09S],(_ch~MtmmGo:k5i4Rtu&F>cghQ',
+        'HOST': 'ls-20a75d940c08c320a1bd714409dff10710af88aa.cyy86kk8jsqc.us-east-2.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
